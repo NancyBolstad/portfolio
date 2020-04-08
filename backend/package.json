@@ -1,0 +1,35 @@
+{
+  "name": "portfolio2020-backend",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Nancy Bolstad",
+  "license": "MIT",
+  "private": true,
+  "main": "lib/server.js",
+  "scripts": {
+    "develop": "node ./lib/server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "serve-static": "^1.11.2",
+    "trie-search": "^1.0.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "husky": "^3.0.8",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  }
+}
