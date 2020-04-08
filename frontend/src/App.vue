@@ -2,15 +2,17 @@
   <div id="app">
     <Nav />
     <router-view :key="$route.fullPath"></router-view>
+    <ArticlesList />
   </div>
 </template>
 
 <script>
 import Nav from "./components/Nav.vue";
+import ArticlesList from "./components/ArticlesList";
 
 export default {
   name: "App",
-  components: { Nav }
+  components: { Nav, ArticlesList }
 };
 </script>
 
