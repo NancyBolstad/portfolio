@@ -15,7 +15,7 @@ var corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use("/", serveStatic(path.resolve(__dirname, "../../frontend/dist")));
+app.use("/", serveStatic(path.resolve(__dirname, "../../dist")));
 
 app.get("/api/v1/projects", function(_, res, _) {
   try {
