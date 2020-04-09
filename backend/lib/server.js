@@ -15,10 +15,29 @@ var corsOptions = {
 
 app.use(cors(corsOptions));
 
-app.use("/", serveStatic(path.resolve(__dirname, "../frontend/dist")));
+app.use("/", serveStatic(path.resolve(__dirname, "../../frontend/dist")));
 
-app.get("/v1/projects", function(_, res, _) {
-  res.json(data);
+app.get("/api/v1/projects", function(_, res, _) {
+  try {
+    res.json({ code: 200, ...data });
+  } catch (error) {
+    if ("response" in error) {
+      res.json(error.response.body);
+    } else {
+      res.json(error);
+    }
+  }
+});
+
+app.get("/api/v1/projects/:id", function(req, res, _) {
+  const requestValue = req.params.id;
+  const toFind = data.projects.find(project => {
+    return project.id === requestValue;
+  });
+
+  if (toFind) {
+    res.json(toFind);
+  }
 });
 
 app.listen(port, () => {
