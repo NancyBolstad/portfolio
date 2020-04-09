@@ -1,6 +1,6 @@
 <template>
   <div class="uk-section">
-    <h1 class="uk-article-title">/projects</h1>
+    <h2 class="uk-article-title">/projects</h2>
     <div class="uk-grid-small uk-child-width-auto" uk-grid>
       <div>
         <a class="uk-button uk-button-text" href="#">#React</a>
@@ -20,7 +20,7 @@
           uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500"
         >
           <div class="uk-card-media-top">
-            <img :src="project.image" :alt="project.name" height="50" />
+            <img :src="project.image" :alt="project.name" height="100" />
           </div>
           <div class="uk-card-body">
             <span
@@ -84,7 +84,7 @@ export default {
 }
 .uk-label {
   background-color: black;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   text-transform: lowercase;
 }
 .uk-button-text {

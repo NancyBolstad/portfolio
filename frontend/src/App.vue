@@ -43,9 +43,21 @@ a:focus {
   opacity: 0.8;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Roboto Mono", monospace;
+}
+
+h1 {
   font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.75rem;
 }
 
 #category {
