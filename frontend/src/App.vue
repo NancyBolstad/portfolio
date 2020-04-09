@@ -1,33 +1,43 @@
 <template>
-  <div id="app">
+  <div id="app" class="uk-width-*@l uk-padding-large">
     <Nav />
     <router-view :key="$route.fullPath"></router-view>
-    <ArticlesList />
+    <ProjectsList />
+    <a href="#" uk-totop uk-scroll></a>
   </div>
 </template>
 
 <script>
 import Nav from "./components/Nav.vue";
-import ArticlesList from "./components/ArticlesList";
+import ProjectsList from "./components/ProjectsList";
 
 export default {
   name: "App",
-  components: { Nav, ArticlesList }
+  components: {
+    Nav,
+    ProjectsList
+  }
 };
 </script>
 
 <style lang="css">
+body {
+  color: black;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
 
 h1 {
-  font-family: Staatliches;
+  font-family: "Roboto Mono", monospace;
   font-size: 120px;
 }
 
 #category {
-  font-family: Staatliches;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
@@ -51,7 +61,7 @@ h1 {
 
 .uk-navbar-container {
   background: #fff !important;
-  font-family: Staatliches;
+  font-family: "Roboto Mono", monospace;
 }
 
 img:hover {

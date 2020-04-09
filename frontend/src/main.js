@@ -13,7 +13,7 @@ const router = new VueRouter({
       path: "/"
     },
     {
-      path: "/article/:id"
+      path: "/project/:id"
     },
     {
       path: "/category/:id"
