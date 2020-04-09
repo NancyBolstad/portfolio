@@ -30,13 +30,22 @@ app.get("/api/v1/projects", function(_, res, _) {
 });
 
 app.get("/api/v1/projects/:id", function(req, res, _) {
-  const requestValue = req.params.id;
-  const toFind = data.projects.find(project => {
-    return project.id === requestValue;
-  });
+  try {
+    const requestValue = req.params.id;
 
-  if (toFind) {
-    res.json(toFind);
+    const toFind = data.projects.find(project => {
+      return project.id === requestValue;
+    });
+
+    if (toFind) {
+      res.json(toFind);
+    }
+  } catch (error) {
+    if ("response" in error) {
+      res.json(error.response.body);
+    } else {
+      res.json(error);
+    }
   }
 });
 
