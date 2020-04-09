@@ -1,8 +1,8 @@
 {
   "scripts": {
-    "setup:npm": "npm install && npm-run-all -p setup:npm:*",
-    "setup:npm:backend": "cd backend && npm install",
-    "setup:npm:frontend": "cd frontend && npm install",
+    "start:npm": "npm install && npm-run-all -p setup:npm:*",
+    "start:npm:backend": "cd backend && npm install",
+    "start:npm:frontend": "cd frontend && npm install",
     "develop:npm": "npm-run-all -p develop:npm:*",
     "develop:npm:backend": "cd backend && npm run develop",
     "develop:npm:frontend": "cd frontend && npm run develop",
