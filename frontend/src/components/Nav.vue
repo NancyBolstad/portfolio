@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="uk-section">
     <nav class="uk-navbar-container" uk-navbar>
       <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
@@ -15,6 +15,10 @@
 <script></script>
 
 <style lang="css">
+.uk-section {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 #logo {
   text-decoration: none;
   font-family: "Roboto Mono", monospace;

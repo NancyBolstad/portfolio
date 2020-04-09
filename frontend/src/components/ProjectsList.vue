@@ -1,15 +1,23 @@
 <template>
   <div class="uk-section">
+    <h1 class="uk-article-title">/projects</h1>
+    <div class="uk-grid-small uk-child-width-auto" uk-grid>
+      <div>
+        <a class="uk-button uk-button-text" href="#">#React</a>
+      </div>
+      <div>
+        <a class="uk-button uk-button-text" href="#">#TypeScript</a>
+      </div>
+    </div>
     <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
       <router-link
         v-for="project in fullList"
         :to="{ path: '/project/' + project.id }"
-        class="uk-link-reset"
         :key="project.id"
       >
         <div
           class="uk-card uk-card-default"
-          uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300"
+          uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500"
         >
           <div class="uk-card-media-top">
             <img :src="project.image" :alt="project.name" height="50" />
@@ -74,12 +82,13 @@ export default {
   padding: 2.5rem 0.5rem 3rem 0.5rem;
   color: black;
 }
-.uk-card {
-  border: 2px solid black;
-}
 .uk-label {
   background-color: black;
   margin-left: 0.5rem;
   text-transform: lowercase;
+}
+.uk-button-text {
+  text-transform: lowercase;
+  font-size: 1rem;
 }
 </style>

@@ -1,7 +1,8 @@
 <template>
-  <div id="app" class="uk-width-*@l uk-padding-large">
+  <div id="app">
     <Nav />
     <router-view :key="$route.fullPath"></router-view>
+    <Banner />
     <ProjectsList />
     <a href="#" uk-totop uk-scroll></a>
   </div>
@@ -10,11 +11,13 @@
 <script>
 import Nav from "./components/Nav.vue";
 import ProjectsList from "./components/ProjectsList";
+import Banner from "./components/Banner";
 
 export default {
   name: "App",
   components: {
     Nav,
+    Banner,
     ProjectsList
   }
 };
@@ -22,18 +25,27 @@ export default {
 
 <style lang="css">
 body {
-  color: black;
-  max-width: 1080px;
+  color: #333;
+  background-color: #f6f6f6;
   margin: 0 auto;
+  font-family: "Roboto Mono", monospace;
+  padding: 0 1rem;
 }
 
 a {
   text-decoration: none;
+  color: #333;
+}
+
+a:hover,
+a:focus {
+  color: #333;
+  opacity: 0.8;
 }
 
 h1 {
   font-family: "Roboto Mono", monospace;
-  font-size: 120px;
+  font-size: 2.25rem;
 }
 
 #category {
@@ -60,7 +72,6 @@ h1 {
 }
 
 .uk-navbar-container {
-  background: #fff !important;
   font-family: "Roboto Mono", monospace;
 }
 
