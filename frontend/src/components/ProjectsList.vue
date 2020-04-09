@@ -44,7 +44,9 @@ export default {
   data: function() {
     console.log(process.env.VUE_API_URL);
     return {
-      api_url: process.env.VUE_API_URL || "http://localhost:8001/projects",
+      api_url:
+        process.env.VUE_API_URL ||
+        "https://secret-taiga-29398.herokuapp.com/projects",
       projects: []
     };
   },
