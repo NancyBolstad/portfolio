@@ -8,7 +8,7 @@
       "descriptions": "",
       "technologies": ["react", "typescript", "mogodb", "storybook"],
       "website": "https://stendi.no/",
-      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/v1586331052/mysite/gvycbh0le6qladriqmpk.png",
+      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331052/mysite/gvycbh0le6qladriqmpk.jpg",
       "isOpenSource": false
     },
     {
@@ -19,7 +19,7 @@
       "descriptions": "",
       "technologies": ["react", "typescript", "mogodb", "storybook"],
       "website": "https://www.ludensreklame.no/",
-      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/v1586430095/mysite/mtgdj2b494j1oyonbzqz.png",
+      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586430095/mysite/mtgdj2b494j1oyonbzqz.jpg",
       "isOpenSource": false
     },
     {
@@ -30,7 +30,7 @@
       "descriptions": "",
       "technologies": ["react", "typescript", "sanity"],
       "website": "https://askerkulturhus.no/",
-      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/v1586331201/mysite/bo2ytz6xsco4awdxkibu.png",
+      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331201/mysite/bo2ytz6xsco4awdxkibu.jpg",
       "isOpenSource": false
     },
     {
@@ -41,7 +41,7 @@
       "descriptions": "",
       "technologies": ["typescript", "tensorflow js", "npm"],
       "website": "https://look-at-me.netlify.com/",
-      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/v1586330977/mysite/svpmnxwcwgtdbz2wga1f.png",
+      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586330977/mysite/svpmnxwcwgtdbz2wga1f.jpg",
       "isOpenSource": true
     },
     {
@@ -52,7 +52,7 @@
       "descriptions": "",
       "technologies": ["typescript", "tensorflow js"],
       "website": "https://nancybolstad.github.io/giphy-app/",
-      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/v1586331189/mysite/izlujktnarjapwodehjb.png",
+      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331189/mysite/izlujktnarjapwodehjb.jpg",
       "isOpenSource": true
     },
     {
@@ -63,7 +63,7 @@
       "descriptions": "",
       "technologies": ["typescript", "react"],
       "website": "https://agitated-kilby-44b818.netlify.com/",
-      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/v1586331151/mysite/yim4muf9qt9zhwghxlc8.png",
+      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331151/mysite/yim4muf9qt9zhwghxlc8.jpg",
       "isOpenSource": true
     },
     {
@@ -74,7 +74,7 @@
       "descriptions": "",
       "technologies": ["react", "typescript", "mogodb", "storybook"],
       "website": "https://www.gravstein24.no/",
-      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/v1586331083/mysite/rkoeqlndzf6yxzgmpzr0.png",
+      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331083/mysite/rkoeqlndzf6yxzgmpzr0.jpg",
       "isOpenSource": false
     },
     {
@@ -85,7 +85,7 @@
       "descriptions": "",
       "technologies": ["react", "typescript", "mogodb", "storybook"],
       "website": "https://elkoenergy.no/",
-      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/v1586331115/mysite/xnlhnqzlej8d0snrd7ad.png",
+      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331115/mysite/xnlhnqzlej8d0snrd7ad.jpg",
       "isOpenSource": false
     },
     {
@@ -96,7 +96,7 @@
       "descriptions": "",
       "technologies": ["react", "typescript", "mogodb", "storybook"],
       "website": "https://www.altinstallasjon.no/",
-      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/v1586331065/mysite/xt8munzm56nasprajcxz.png",
+      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331065/mysite/xt8munzm56nasprajcxz.jpg",
       "isOpenSource": false
     },
     {
@@ -107,7 +107,7 @@
       "descriptions": "",
       "technologies": ["typescript", "sass", "game"],
       "website": "https://cartoon-game-of-thrones.netlify.com/",
-      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/v1586331179/mysite/s3zc3tzfbll42tis5rlw.png",
+      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331179/mysite/s3zc3tzfbll42tis5rlw.jpg",
       "isOpenSource": true,
       "gitLink": "https://github.com/NancyBolstad/game"
     },
@@ -119,7 +119,7 @@
       "descriptions": "",
       "technologies": ["javascript", "html", "css"],
       "website": "https://nancybolstad.github.io/nasa-apollo/",
-      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/v1586331136/mysite/wvslnkz2lotvcua1h4vu.png",
+      "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331136/mysite/wvslnkz2lotvcua1h4vu.jpg",
       "isOpenSource": true,
       "gitLink": "https://github.com/NancyBolstad/nasa-apollo"
     }
