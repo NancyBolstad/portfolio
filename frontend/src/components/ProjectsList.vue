@@ -24,14 +24,13 @@
           </div>
           <div class="uk-card-body">
             <span
-              id="category"
               v-for="item in project.technologies"
-              :key="item.id"
+              :key="`technologies ${item.id}`"
               class="uk-label"
             >
               {{ item }}
             </span>
-            <p id="title" class="uk-text-large">{{ project.title }}</p>
+            <p class="uk-text-large">{{ project.title }}</p>
           </div>
         </div>
       </router-link>
