@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "cd backend && npm install && node ./lib/server.js",
+    "start": "cd frontend && npm run build && cd ../backend && npm install && node ./lib/server.js",
     "setup:npm": "npm install && npm-run-all -p setup:npm:*",
     "setup:npm:backend": "cd backend && npm install",
     "setup:npm:frontend": "cd frontend && npm install",
