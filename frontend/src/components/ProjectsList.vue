@@ -1,14 +1,5 @@
 <template>
-  <div class="uk-section">
-    <h2 class="uk-article-title">/projects</h2>
-    <div class="uk-grid-small uk-child-width-auto" uk-grid>
-      <div>
-        <a class="uk-button uk-button-text" href="#">#React</a>
-      </div>
-      <div>
-        <a class="uk-button uk-button-text" href="#">#TypeScript</a>
-      </div>
-    </div>
+  <div>
     <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
       <router-link
         v-for="project in fullList"
@@ -25,7 +16,7 @@
           <div class="uk-card-body">
             <span
               v-for="item in project.technologies"
-              :key="`technologies ${item.id}`"
+              :key="item.id"
               class="uk-label"
             >
               {{ item }}
@@ -40,26 +31,8 @@
 
 <script>
 export default {
-  data: function() {
-    return {
-      api_url: process.env.VUE_APP_API_URL,
-      projects: []
-    };
-  },
-  created() {
-    this.fetchData();
-  },
-  methods: {
-    fetchData() {
-      fetch(this.api_url)
-        .then(response => {
-          return response.json();
-        })
-        .then(data => {
-          this.projects = data.projects;
-          console.log(this.projects);
-        });
-    }
+  props: {
+    projects: Array
   },
   computed: {
     amount() {
@@ -73,10 +46,6 @@ export default {
 </script>
 
 <style lang="css">
-.uk-section {
-  max-width: 1080px;
-  margin: 0 auto;
-}
 .uk-card-body {
   padding: 2.5rem 0.5rem 3rem 0.5rem;
   color: black;

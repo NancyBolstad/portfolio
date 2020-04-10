@@ -1,5 +1,5 @@
 <template>
-  <article class="uk-section">
+  <article>
     <h1>Hi, I am a Fullstack Developer from Oslo.</h1>
     <p class="uk-text-lead">
       Currently Consultant

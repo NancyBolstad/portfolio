@@ -1,24 +1,20 @@
 <template>
   <div id="app">
-    <Nav />
-    <router-view :key="$route.fullPath"></router-view>
-    <Banner />
-    <ProjectsList />
-    <a href="#" uk-totop uk-scroll></a>
+    <div>
+      <Nav />
+      <router-view :key="$route.fullPath"></router-view>
+      <a href="#" uk-totop uk-scroll></a>
+    </div>
   </div>
 </template>
 
 <script>
 import Nav from "./components/Nav.vue";
-import ProjectsList from "./components/ProjectsList";
-import Banner from "./components/Banner";
 
 export default {
   name: "App",
   components: {
-    Nav,
-    Banner,
-    ProjectsList
+    Nav
   }
 };
 </script>
@@ -58,33 +54,6 @@ h1 {
 
 h2 {
   font-size: 1.75rem;
-}
-
-#category {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-
-#title {
-  letter-spacing: 0.4px;
-  font-size: 22px;
-  font-size: 1.375rem;
-  line-height: 1.13636;
-}
-
-#banner {
-  margin: 20px;
-  height: 800px;
-}
-
-#editor {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.75;
-}
-
-.uk-navbar-container {
-  font-family: "Roboto Mono", monospace;
 }
 
 img:hover {

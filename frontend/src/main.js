@@ -10,10 +10,12 @@ const router = new VueRouter({
   mode: "history",
   routes: [
     {
-      path: "/"
+      path: "/",
+      components: require("./containers/Home.vue")
     },
     {
-      path: "/project/:id"
+      path: "/project/:id",
+      components: require("./containers/Project.vue")
     },
     {
       path: "/category/:id"
