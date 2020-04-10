@@ -1,56 +1,28 @@
 <template>
   <article>
-    <h1>Hi, I am a Fullstack Developer from Oslo.</h1>
+    <h1>Hi, I am a Front-end Developer from Oslo.</h1>
     <p class="uk-text-lead">
       Currently Consultant
       <a href="https://www.bouvet.no/" target="_blank">@Bouvet</a>
     </p>
     <p class="uk-text-lead">
-      Previously Front-end Developer
+      Previously Software Developer
       <a href="https://ludensgruppen.no/" target="_blank">@Ludens</a>
     </p>
     <p class="uk-text-lead">Learns fast. Goal oriented. Thinks creatively.</p>
-
-    <div class="uk-grid-small uk-child-width-auto" uk-grid>
-      <div>
-        <a
-          href="mailto:litchacha@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span
-            class="iconify"
-            data-inline="false"
-            data-icon="ic:outline-email"
-            style="font-size: 48px;"
-          ></span
-        ></a>
-      </div>
-      <div>
-        <a href="https://github.com/NancyBolstad" target="_blank">
-          <span
-            class="iconify"
-            data-inline="false"
-            data-icon="jam:github-square"
-            style="font-size: 48px;"
-          ></span
-        ></a>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/nancy-bolstad/" target="_blank">
-          <span
-            class="iconify"
-            data-inline="false"
-            data-icon="ant-design:linkedin-outlined"
-            style="font-size: 48px;"
-          ></span
-        ></a>
-      </div>
-    </div>
+    <MediaLinks />
   </article>
 </template>
 
-<script></script>
+<script>
+import MediaLinks from "./MediaLinks.vue";
+
+export default {
+  components: {
+    MediaLinks
+  }
+};
+</script>
 
 <style lang="css">
 .uk-section {

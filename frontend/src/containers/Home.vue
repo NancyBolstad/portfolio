@@ -2,6 +2,11 @@
   <div class="uk-section">
     <Banner />
     <h2 class="uk-article-title">/projects</h2>
+    <ul>
+      <li v-for="(option, index) in options" :key="index">
+        {{ option }}
+      </li>
+    </ul>
     <ProjectsList :projects="projects" />
   </div>
 </template>
@@ -19,11 +24,16 @@ export default {
     return {
       api_url: process.env.VUE_APP_API_URL,
       projects: [],
-      options: []
+      options: ["react", "typescript"]
     };
   },
   created() {
     this.fetchData();
+  },
+  destroyed() {
+    window.scrollTo({
+      top: 0
+    });
   },
   methods: {
     fetchData() {
@@ -70,8 +80,7 @@ export default {
   font-size: 1rem;
 }
 
-.select {
-  width: 30rem;
-  height: 10rem;
+.uk-article-title {
+  margin: 5rem 0 3rem 0;
 }
 </style>

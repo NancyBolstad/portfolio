@@ -1,20 +1,25 @@
 <template>
   <div id="app">
-    <div>
-      <Nav />
+    <Header />
+    <main>
       <router-view :key="$route.fullPath"></router-view>
-      <a href="#" uk-totop uk-scroll></a>
-    </div>
+    </main>
+    <Scroller />
+    <Footer />
   </div>
 </template>
 
 <script>
-import Nav from "./components/Nav.vue";
+import Header from "./components/Header.vue";
+import Scroller from "./components/Scroller.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    Nav
+    Header,
+    Scroller,
+    Footer
   }
 };
 </script>
@@ -25,7 +30,13 @@ body {
   background-color: #f6f6f6;
   margin: 0 auto;
   font-family: "Roboto Mono", monospace;
-  padding: 0 1rem;
+}
+
+header,
+main {
+  max-width: 1080px;
+  padding: 1.5rem;
+  margin: 0 auto;
 }
 
 a {

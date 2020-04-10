@@ -1,5 +1,5 @@
 <template>
-  <div class="uk-section">
+  <header>
     <nav class="uk-navbar-container" uk-navbar>
       <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
@@ -9,23 +9,19 @@
         </ul>
       </div>
     </nav>
-  </div>
+  </header>
 </template>
 
 <script></script>
 
 <style lang="css">
-.uk-section {
-  max-width: 1080px;
-  margin: 0 auto;
-}
 #logo {
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
   color: whitesmoke;
   background-color: black;
   text-transform: capitalize;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   font-size: 1.5rem;
   min-height: 0;
   font-weight: bold;
