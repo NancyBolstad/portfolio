@@ -5,8 +5,11 @@
       "name": "ludens",
       "published": "2020-04",
       "title": "Developed this content rich website in two weeks",
+      "subtitle": "",
+      "leadText": "Developed this content rich website in two weeks",
       "descriptions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
-      "technologies": ["react", "typescript", "mogodb", "storybook"],
+      "technologies": ["react", "typescript", "node", "mongoDB", "storybook"],
+      "categories": ["ludens"],
       "website": "https://www.ludensreklame.no/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586430095/mysite/mtgdj2b494j1oyonbzqz.jpg",
       "isOpenSource": false
@@ -18,8 +21,16 @@
       "title": "My very first react project at work: Asker kulturhus' website",
       "descriptions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
       "technologies": ["react", "typescript", "sanity"],
+      "categories": ["ludens"],
       "website": "https://askerkulturhus.no/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331201/mysite/bo2ytz6xsco4awdxkibu.jpg",
+      "galley": [
+        "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586430095/mysite/mtgdj2b494j1oyonbzqz.jpg",
+        "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586430095/mysite/mtgdj2b494j1oyonbzqz.jpg",
+        "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586430095/mysite/mtgdj2b494j1oyonbzqz.jpg",
+        "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586430095/mysite/mtgdj2b494j1oyonbzqz.jpg",
+        "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586430095/mysite/mtgdj2b494j1oyonbzqz.jpg"
+      ],
       "isOpenSource": false
     },
     {
@@ -28,7 +39,8 @@
       "published": "2019-07",
       "title": "Real time movement detection app built with JS machine learning framework.",
       "descriptions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
-      "technologies": ["typescript", "tensorflow js", "npm"],
+      "technologies": ["typescript", "tensorflow", "npm"],
+      "categories": ["personal"],
       "website": "https://look-at-me.netlify.com/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586330977/mysite/svpmnxwcwgtdbz2wga1f.jpg",
       "isOpenSource": true
@@ -37,9 +49,10 @@
       "id": "0ed92f5bf1e1459fb367b205a25a69a1",
       "name": "giphy search",
       "published": "2019-10",
-      "title": "Gif search app made with React and TypeScript",
+      "title": "A simple gif search React app made with GIPHY API.",
       "descriptions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
       "technologies": ["typescript", "tensorflow js"],
+      "categories": ["personal"],
       "website": "https://nancybolstad.github.io/giphy-app/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331189/mysite/izlujktnarjapwodehjb.jpg",
       "isOpenSource": true
@@ -51,6 +64,7 @@
       "title": "Build website for Norway's largest private healthcare services",
       "descriptions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
       "technologies": ["react", "typescript", "mogodb", "storybook"],
+      "categories": ["ludens"],
       "website": "https://stendi.no/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331052/mysite/gvycbh0le6qladriqmpk.jpg",
       "isOpenSource": false
@@ -62,6 +76,7 @@
       "title": "Gif search app made with React and TypeScript",
       "descriptions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
       "technologies": ["typescript", "react"],
+      "categories": ["personal"],
       "website": "https://agitated-kilby-44b818.netlify.com/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331151/mysite/yim4muf9qt9zhwghxlc8.jpg",
       "isOpenSource": true
@@ -73,6 +88,7 @@
       "title": "Selling gravestones online: from scratch to final products",
       "descriptions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
       "technologies": ["react", "typescript", "mogodb", "storybook"],
+      "categories": ["e-commerce", "ludens"],
       "website": "https://www.gravstein24.no/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331083/mysite/rkoeqlndzf6yxzgmpzr0.jpg",
       "isOpenSource": false
@@ -84,6 +100,7 @@
       "title": "Developed the front-end for a norwegian electrical E-commerce platform",
       "descriptions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
       "technologies": ["react", "typescript", "mogodb", "storybook"],
+      "categories": ["e-commerce", "ludens"],
       "website": "https://elkoenergy.no/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331115/mysite/xnlhnqzlej8d0snrd7ad.jpg",
       "isOpenSource": false
@@ -95,6 +112,7 @@
       "title": "Online store for electrical installations and electrical equipment",
       "descriptions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p><p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
       "technologies": ["react", "typescript", "mogodb", "storybook"],
+      "categories": ["e-commerce", "ludens"],
       "website": "https://www.altinstallasjon.no/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331065/mysite/xt8munzm56nasprajcxz.jpg",
       "isOpenSource": false
@@ -104,8 +122,9 @@
       "name": "board game",
       "published": "2019-12",
       "title": "Online board game made with TypeScript, Sass and native HTML",
-      "descriptions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
+      "descriptions": "<p>Starting from identifying my target user group as well as the brand personality, I then proceeded to carry out my design sketches for visual elements and interactive features. From there I moved on to develop the game, making use of modern front-end technologies such as HTML5, SASS, JavaScript, TypeScript as well as tools such as Yarn, browserify and Git. I have named the final product “Cartoon Game of Thrones”. The website has been validated under the Web Content Accessibility Guidelines (WCAG)/the World Wide Web Consortium (W3C) standards. According to Google’s Lighthouse auditing, the page scored an overall performance grade of 99 out of 100.</p><p>The game code is made up of four main parts. First, I created a class called Storage (located in the util subfolder). Because there are several places where we need to make use of the local storage to access, update or remove player information such as their index and who is the winner, it is better to use a class rather than duplicating this code in several sections.&nbsp;</p><p>Second, I used the Fetch API together with Async/Await and try/catch syntax to make API calls. The benefit here is that the async function allows for fast page delivery and that the try/catch syntax makes error handling easier. Refer to the showCharacter.ts file in the scripts folder to see the details.&nbsp;</p><p>Third, several DOM manipulation methods were used for the following purposes and features:&nbsp;</p><ul><li>I used the drag and drop event listener to make the character selection page interactive according to different mouse events;</li><li>I added event listeners to detect click event on the client side and to attach callback functions to such clicks;&nbsp;</li><li>I used the querySelector() and the getElementById() methods to gain access to HTML files.&nbsp;</li><li>Together with methods such as appendChild(), if/else statements and loops, this allows us to create, update and remove HTML elements from the page. For instance, I used loops to create a game board with tiles and traps. The logic is quite simple and this method works fast. Additionally, rather than writing one line of code for each tile (and thus creating tons of duplicate code), the loop approach here keeps the code short and easy to read.</li></ul><p>Fourth, I used JavaScript to create the animations and delayed effects in the game. For instance, to display the trap message i used the setTimeout() method to add a pause in the execution of the next line of code, until the user has had enough time to read the content of the message box. As for the animations, I created the confetti 10 animation effect using canvas on the winner page. Basically, it creates a particle for a small confetti and then makes use of loops together with array functions to multiply this object with random colours and positions on the screen. Then, I used the window.requestAnimationFrame() to update the canvas drawing of the particles and thus create the movement effect.</p>",
       "technologies": ["typescript", "sass", "game"],
+      "categories": ["personal", "game"],
       "website": "https://cartoon-game-of-thrones.netlify.com/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331179/mysite/s3zc3tzfbll42tis5rlw.jpg",
       "isOpenSource": true,
@@ -115,9 +134,10 @@
       "id": "a3d713a95c8b4ad498d08de162b3c0aa",
       "name": "nasa-apollo",
       "published": "2019-06",
-      "title": "nasa-apollo",
-      "descriptions": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>",
+      "title": "Using NASA API to create microsite",
+      "descriptions": "<p>The goal of this semester exam project has been to develop a history learning microsite for the groundbreaking first moon landing mission, in celebration of its 50th anniversary on July 20 2019. Starting from planning the project schedule with the Gantt Chart, defining the functional requirements, and researching the target user group, I designed and developed a responsive, dynamic, and interactive microsite using <a href='https://images.nasa.gov/' rel='noopener noreferrer' target='_blank'>NASA&rsquo;s Image and Video Library API</a>.</p><p>Following a mobile-first approach and complying with industry standards in terms of design principles, I am very happy with the end result that has come out of this project. With semantic HTML elements and meta tags the website is optimised for search engines. With aria-attributes, together with a good combination of color and fonts, the accessibility of the page is validated against WCAG requirements. With modern JavaScript syntax I have been able to create sophisticated onsite search functionality as well as make fast API calls that successfully retrieve, interact with and presents the results of these calls in a manner of my choosing. All this together with a good user interface. The end result is a dynamic and responsive website, built from the ground up without the convenience and shortcuts provided by frameworks.</p><h3>Features</h3><ul><li> A mobile-first approach is applied for responsive design.</li><li>Javascript fetch JSON with ES7 Async Await.</li><li>Easy-to-use search for better user experience.</li></ul>",
       "technologies": ["javascript", "html", "css"],
+      "categories": ["personal"],
       "website": "https://nancybolstad.github.io/nasa-apollo/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331136/mysite/wvslnkz2lotvcua1h4vu.jpg",
       "isOpenSource": true,
