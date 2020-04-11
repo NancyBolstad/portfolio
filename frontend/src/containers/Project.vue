@@ -1,7 +1,7 @@
 <template>
   <div class="uk-section">
     <div v-if="loading" uk-spinner="ratio: 3"></div>
-    <div v-else>
+    <article v-else>
       <h2 class="uk-article-title">Project: {{ project.name }}</h2>
       <p class="uk-text-lead">{{ project.title }}</p>
       <div class="uk-child-width-auto uk-article-meta">
@@ -11,13 +11,14 @@
             :href="project.website"
             target="_blank"
             rel="noopener noreferrer"
-            ><span
+          >
+            <span
               class="iconify"
               data-icon="cil:browser"
               data-inline="false"
             ></span>
-            Go to website</a
-          >
+            Go to website
+          </a>
         </div>
         <div v-if="project.isOpenSource">
           <a
@@ -25,18 +26,19 @@
             :href="project.gitLink"
             target="_blank"
             rel="noopener noreferrer"
-            ><span
+          >
+            <span
               class="iconify"
               data-icon="bx:bx-code-alt"
               data-inline="false"
             ></span>
-            View source code</a
-          >
+            View source code
+          </a>
         </div>
       </div>
       <img :src="project.image" :alt="project.name" />
       <div v-html="project.descriptions" id="rich-text"></div>
-    </div>
+    </article>
   </div>
 </template>
 
@@ -46,25 +48,25 @@ export default {
     return {
       project: {},
       loading: true,
-      api_url: process.env.VUE_APP_API_URL + this.$route.params.id
-    };
+      api_url: process.env.VUE_APP_API_URL + this.$route.params.id,
+    }
   },
   created() {
-    this.fetchData();
+    this.fetchData()
   },
   methods: {
     fetchData() {
       fetch(this.api_url)
         .then(response => {
-          return response.json();
+          return response.json()
         })
         .then(data => {
-          this.project = data;
-          this.loading = false;
-        });
-    }
-  }
-};
+          this.project = data
+          this.loading = false
+        })
+    },
+  },
+}
 </script>
 
 <style lang="css">
@@ -88,8 +90,28 @@ export default {
   margin-bottom: 1rem;
 }
 
-#rich-text > p {
+#rich-text {
   max-width: 650px;
-  margin: 4rem auto 2rem;
+  margin: 3rem auto;
+  font-size: 1.2rem;
+}
+
+#rich-text > p,
+#rich-text > ul {
+  line-height: 2;
+}
+
+#rich-text > h3 {
+  font-weight: 600;
+}
+
+#rich-text > p > a {
+  text-decoration: underline !important;
+}
+
+.uk-comment-body {
+  max-width: 480px;
+  margin: 0 auto;
+  border-left: 2px solid #333;
 }
 </style>
