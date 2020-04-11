@@ -19,8 +19,6 @@ app.use('/', serveStatic(path.resolve(__dirname, '../../dist')))
 
 app.get('/api/v1/projects', function(_, res, _) {
   try {
-    res.status(404).send('Sorry, we cannot find that!')
-    res.status(500).send({ error: 'something blew up' })
     res.json({ code: 200, ...data })
   } catch (error) {
     if ('response' in error) {
@@ -32,8 +30,6 @@ app.get('/api/v1/projects', function(_, res, _) {
 app.get('/api/v1/projects/:id', function(req, res, _) {
   try {
     const requestValue = req.params.id
-
-    console.log(req)
 
     const toFind = data.projects.find(project => {
       return project.id === requestValue
