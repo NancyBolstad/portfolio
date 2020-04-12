@@ -2,19 +2,7 @@
   <div class="uk-section">
     <Banner />
     <h2 class="uk-article-title">/projects</h2>
-    <div class="uk-button-group">
-      <button class="uk-button uk-button-default" @click="showFull()">
-        All
-      </button>
-      <button
-        class="uk-button uk-button-default"
-        v-for="(category, index) in categories"
-        :key="index"
-        @click="sort(category)"
-      >
-        {{ category }}
-      </button>
-    </div>
+    <Sort :categories="categories" :sortHandler="sort" />
     <ProjectsList v-if="sorted.length > 0" :projects="sorted" />
     <ProjectsList v-else :projects="projects" />
   </div>
@@ -23,18 +11,19 @@
 <script>
 import ProjectsList from '../components/ProjectsList.vue';
 import Banner from '../components/Banner';
+import Sort from '../components/Sort';
 
 export default {
   components: {
     ProjectsList,
     Banner,
+    Sort,
   },
   data: function() {
     return {
       api_url: process.env.VUE_APP_API_URL,
       projects: [],
       sorted: [],
-      options: ['react', 'typescript'],
     };
   },
   created() {
@@ -69,17 +58,6 @@ export default {
     },
     fullList() {
       return this.projects;
-    },
-    technologies() {
-      const technologies = [];
-      this.projects.map(projects => {
-        projects.technologies.map(technology => {
-          if (!technologies.includes(technology)) {
-            technologies.push(technology);
-          }
-        });
-      });
-      return technologies;
     },
     categories() {
       const categories = [];
@@ -124,5 +102,11 @@ export default {
 
 .uk-button-group {
   flex-wrap: wrap;
+}
+
+.uk-button-group > button {
+  margin-bottom: 1.2rem;
+  margin-right: 1rem;
+  border-color: #333333;
 }
 </style>
