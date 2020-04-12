@@ -12,7 +12,11 @@
   </header>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: 'Header',
+};
+</script>
 
 <style lang="css">
 #logo {
