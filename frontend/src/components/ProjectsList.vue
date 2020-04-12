@@ -31,9 +31,6 @@ export default {
     projects: Array,
   },
   computed: {
-    amount() {
-      return this.projects.length;
-    },
     fullList() {
       return this.projects;
     },
