@@ -67,7 +67,7 @@ export default {
       return this.projects;
     },
     categories() {
-      const categories = [];
+      const categories = ['all'];
       this.projects.map(projects => {
         projects.categories.map(category => {
           if (!categories.includes(category)) {
