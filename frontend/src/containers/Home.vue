@@ -48,8 +48,15 @@ export default {
       this.sorted = [];
     },
     sort(target) {
-      console.log(target);
-      this.sorted = [...this.projects].slice(0, 2);
+      const newArray = this.projects.filter(element => {
+        return element.categories.includes(target);
+      });
+
+      if (newArray) {
+        this.sorted = newArray;
+      } else {
+        this.showFull();
+      }
     },
   },
   computed: {

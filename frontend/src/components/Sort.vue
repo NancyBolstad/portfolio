@@ -1,6 +1,6 @@
 <template>
   <div class="uk-button-group">
-    <button class="uk-button uk-button-default">
+    <button class="uk-button uk-button-default" @click="sortHandler('all')">
       All
     </button>
     <button
