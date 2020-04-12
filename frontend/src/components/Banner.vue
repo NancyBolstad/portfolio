@@ -15,12 +15,12 @@
 </template>
 
 <script>
-import MediaLinks from "./MediaLinks.vue";
+import MediaLinks from './MediaLinks.vue';
 
 export default {
   components: {
-    MediaLinks
-  }
+    MediaLinks,
+  },
 };
 </script>
 

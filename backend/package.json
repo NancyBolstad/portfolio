@@ -1,7 +1,7 @@
 {
   "name": "portfolio2020-backend",
   "version": "0.1.0",
-  "description": "",
+  "description": "Backend for my developer portfolio",
   "author": "Nancy Bolstad",
   "license": "MIT",
   "private": true,

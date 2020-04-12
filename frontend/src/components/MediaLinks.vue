@@ -1,11 +1,7 @@
 <template>
   <div class="uk-grid-small uk-child-width-auto" uk-grid>
     <div>
-      <a
-        href="mailto:litchacha@gmail.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="mailto:litchacha@gmail.com" target="_blank" rel="noopener noreferrer">
         <span
           class="iconify"
           data-inline="false"
@@ -39,7 +35,7 @@
 
 <script>
 export default {
-  name: "MediaLinks"
+  name: 'MediaLinks',
 };
 </script>
 

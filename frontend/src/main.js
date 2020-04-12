@@ -1,29 +1,29 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
-import App from "./App.vue";
+import App from './App.vue';
 
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
 
 const router = new VueRouter({
-  mode: "history",
+  mode: 'history',
   routes: [
     {
-      path: "/",
-      components: require("./containers/Home.vue")
+      path: '/',
+      components: require('./containers/Home.vue'),
     },
     {
-      path: "/project/:id",
-      components: require("./containers/Project.vue")
+      path: '/project/:id',
+      components: require('./containers/Project.vue'),
     },
     {
-      path: "/category/:id"
-    }
-  ]
+      path: '/category/:id',
+    },
+  ],
 });
 
 new Vue({
   router,
-  render: h => h(App)
-}).$mount("#app");
+  render: h => h(App),
+}).$mount('#app');

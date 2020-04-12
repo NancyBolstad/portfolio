@@ -12,12 +12,16 @@
   </header>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: 'Header',
+};
+</script>
 
 <style lang="css">
 #logo {
   text-decoration: none;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   color: whitesmoke;
   background-color: black;
   text-transform: capitalize;

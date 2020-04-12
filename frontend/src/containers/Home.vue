@@ -2,29 +2,32 @@
   <div class="uk-section">
     <Banner />
     <h2 class="uk-article-title">/projects</h2>
-    <ul>
-      <li v-for="(option, index) in options" :key="index">
-        {{ option }}
-      </li>
-    </ul>
-    <ProjectsList :projects="projects" />
+    <Sort :categories="categories" :sortHandler="sort" />
+    <span class="uk-text-small">Sort by:</span>
+    <select class="uk-select" @change="sort($event.target.value)">
+      <option v-for="(category, index) in categories" :key="index">{{ category }}</option>
+    </select>
+    <ProjectsList v-if="sorted.length > 0" :projects="sorted" />
+    <ProjectsList v-else :projects="projects" />
   </div>
 </template>
 
 <script>
-import ProjectsList from "../components/ProjectsList.vue";
-import Banner from "../components/Banner";
+import ProjectsList from '../components/ProjectsList.vue';
+import Banner from '../components/Banner';
+import Sort from '../components/Sort';
 
 export default {
   components: {
     ProjectsList,
-    Banner
+    Banner,
+    Sort,
   },
   data: function() {
     return {
       api_url: process.env.VUE_APP_API_URL,
       projects: [],
-      options: ["react", "typescript"]
+      sorted: [],
     };
   },
   created() {
@@ -32,7 +35,7 @@ export default {
   },
   destroyed() {
     window.scrollTo({
-      top: 0
+      top: 0,
     });
   },
   methods: {
@@ -43,9 +46,25 @@ export default {
         })
         .then(data => {
           this.projects = data.projects;
-          console.log(this.projects);
         });
-    }
+    },
+    showFull() {
+      this.sorted = [];
+    },
+    sort(target) {
+      const newArray = this.projects.filter(element => {
+        return element.categories.includes(target);
+      });
+
+      if (newArray) {
+        this.sorted = newArray;
+      } else {
+        this.showFull();
+      }
+    },
+    changeSelect() {
+      console.log(222288789789789779);
+    },
   },
   computed: {
     amount() {
@@ -53,8 +72,19 @@ export default {
     },
     fullList() {
       return this.projects;
-    }
-  }
+    },
+    categories() {
+      const categories = ['all'];
+      this.projects.map(projects => {
+        projects.categories.map(category => {
+          if (!categories.includes(category)) {
+            categories.push(category);
+          }
+        });
+      });
+      return categories;
+    },
+  },
 };
 </script>
 
@@ -82,5 +112,27 @@ export default {
 
 .uk-article-title {
   margin: 5rem 0 3rem 0;
+}
+
+.uk-button-group {
+  flex-wrap: wrap;
+}
+
+.uk-button-group > button {
+  margin-bottom: 1.2rem;
+  margin-right: 1rem;
+  border-color: #333333;
+}
+.uk-select {
+  display: block !important;
+  margin: 1.2rem auto;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 780px) {
+  .uk-select,
+  .uk-text-small {
+    display: none !important;
+  }
 }
 </style>
