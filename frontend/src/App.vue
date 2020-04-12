@@ -10,17 +10,17 @@
 </template>
 
 <script>
-import Header from "./components/Header.vue";
-import Scroller from "./components/Scroller.vue";
-import Footer from "./components/Footer.vue";
+import Header from './components/Header.vue';
+import Scroller from './components/Scroller.vue';
+import Footer from './components/Footer.vue';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Header,
     Scroller,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>
 
@@ -29,7 +29,7 @@ body {
   color: #333;
   background-color: #f6f6f6;
   margin: 0 auto;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 header,
@@ -56,7 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 h1 {

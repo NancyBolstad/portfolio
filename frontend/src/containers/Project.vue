@@ -12,11 +12,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span
-              class="iconify"
-              data-icon="cil:browser"
-              data-inline="false"
-            ></span>
+            <span class="iconify" data-icon="cil:browser" data-inline="false"></span>
             Go to website
           </a>
         </div>
@@ -27,11 +23,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span
-              class="iconify"
-              data-icon="bx:bx-code-alt"
-              data-inline="false"
-            ></span>
+            <span class="iconify" data-icon="bx:bx-code-alt" data-inline="false"></span>
             View source code
           </a>
         </div>
@@ -49,24 +41,24 @@ export default {
       project: {},
       loading: true,
       api_url: process.env.VUE_APP_API_URL + this.$route.params.id,
-    }
+    };
   },
   created() {
-    this.fetchData()
+    this.fetchData();
   },
   methods: {
     fetchData() {
       fetch(this.api_url)
         .then(response => {
-          return response.json()
+          return response.json();
         })
         .then(data => {
-          this.project = data
-          this.loading = false
-        })
+          this.project = data;
+          this.loading = false;
+        });
     },
   },
-}
+};
 </script>
 
 <style lang="css">

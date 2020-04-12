@@ -17,7 +17,7 @@
 <style lang="css">
 #logo {
   text-decoration: none;
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   color: whitesmoke;
   background-color: black;
   text-transform: capitalize;

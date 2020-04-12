@@ -14,12 +14,9 @@
             <img :src="project.image" :alt="project.name" height="100" />
           </div>
           <div class="uk-card-body">
-            <span
-              v-for="item in project.technologies"
-              :key="item.id"
-              class="uk-label"
-              >{{ item }}</span
-            >
+            <span v-for="item in project.technologies" :key="item.id" class="uk-label">{{
+              item
+            }}</span>
             <p class="uk-text-large">{{ project.title }}</p>
           </div>
         </div>
@@ -35,13 +32,13 @@ export default {
   },
   computed: {
     amount() {
-      return this.projects.length
+      return this.projects.length;
     },
     fullList() {
-      return this.projects
+      return this.projects;
     },
   },
-}
+};
 </script>
 
 <style lang="css">

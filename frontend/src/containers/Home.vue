@@ -12,19 +12,19 @@
 </template>
 
 <script>
-import ProjectsList from "../components/ProjectsList.vue";
-import Banner from "../components/Banner";
+import ProjectsList from '../components/ProjectsList.vue';
+import Banner from '../components/Banner';
 
 export default {
   components: {
     ProjectsList,
-    Banner
+    Banner,
   },
   data: function() {
     return {
       api_url: process.env.VUE_APP_API_URL,
       projects: [],
-      options: ["react", "typescript"]
+      options: ['react', 'typescript'],
     };
   },
   created() {
@@ -32,7 +32,7 @@ export default {
   },
   destroyed() {
     window.scrollTo({
-      top: 0
+      top: 0,
     });
   },
   methods: {
@@ -43,9 +43,8 @@ export default {
         })
         .then(data => {
           this.projects = data.projects;
-          console.log(this.projects);
         });
-    }
+    },
   },
   computed: {
     amount() {
@@ -53,8 +52,8 @@ export default {
     },
     fullList() {
       return this.projects;
-    }
-  }
+    },
+  },
 };
 </script>
 
