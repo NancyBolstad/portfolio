@@ -4,7 +4,6 @@
       class="uk-button uk-button-default"
       v-for="(category, index) in categories"
       :key="index"
-      :title="category"
       @click="handler(category, index, $event)"
       :class="{ selected: currentTab === index }"
     >
@@ -39,7 +38,7 @@ export default {
 
 <style lang="css">
 .uk-button-group {
-  flex-wrap: wrap;
+  display: none;
 }
 
 .uk-button-group > button {
@@ -57,5 +56,12 @@ export default {
 .selected {
   background-color: #333333;
   color: aliceblue;
+}
+
+@media screen and (min-width: 780px) {
+  .uk-button-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 </style>
