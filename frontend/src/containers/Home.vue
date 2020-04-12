@@ -2,12 +2,21 @@
   <div class="uk-section">
     <Banner />
     <h2 class="uk-article-title">/projects</h2>
-    <ul>
-      <li v-for="(option, index) in options" :key="index">
-        {{ option }}
-      </li>
-    </ul>
-    <ProjectsList :projects="projects" />
+    <div class="uk-button-group">
+      <button class="uk-button uk-button-default" @click="showFull()">
+        All
+      </button>
+      <button
+        class="uk-button uk-button-default"
+        v-for="(category, index) in categories"
+        :key="index"
+        @click="sort(category)"
+      >
+        {{ category }}
+      </button>
+    </div>
+    <ProjectsList v-if="sorted.length > 0" :projects="sorted" />
+    <ProjectsList v-else :projects="projects" />
   </div>
 </template>
 
@@ -24,6 +33,7 @@ export default {
     return {
       api_url: process.env.VUE_APP_API_URL,
       projects: [],
+      sorted: [],
       options: ['react', 'typescript'],
     };
   },
@@ -45,6 +55,13 @@ export default {
           this.projects = data.projects;
         });
     },
+    showFull() {
+      this.sorted = [];
+    },
+    sort(target) {
+      console.log(target);
+      this.sorted = [...this.projects].slice(0, 2);
+    },
   },
   computed: {
     amount() {
@@ -52,6 +69,28 @@ export default {
     },
     fullList() {
       return this.projects;
+    },
+    technologies() {
+      const technologies = [];
+      this.projects.map(projects => {
+        projects.technologies.map(technology => {
+          if (!technologies.includes(technology)) {
+            technologies.push(technology);
+          }
+        });
+      });
+      return technologies;
+    },
+    categories() {
+      const categories = [];
+      this.projects.map(projects => {
+        projects.categories.map(category => {
+          if (!categories.includes(category)) {
+            categories.push(category);
+          }
+        });
+      });
+      return categories;
     },
   },
 };
@@ -81,5 +120,9 @@ export default {
 
 .uk-article-title {
   margin: 5rem 0 3rem 0;
+}
+
+.uk-button-group {
+  flex-wrap: wrap;
 }
 </style>
