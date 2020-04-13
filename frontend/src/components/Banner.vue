@@ -1,8 +1,9 @@
 <template>
   <article>
     <h1>Hi, I am a Front-end Developer from Oslo.</h1>
+    <strong class="uk-text-lead">JavaScript | TypeScript | Java | Go</strong>
     <p class="uk-text-lead">
-      Currently Consultant
+      Consultant
       <a
         href="https://www.bouvet.no/"
         target="_blank"
@@ -11,10 +12,7 @@
         aria-label="Go to Bouvet's website"
         uk-tooltip="Go to Bouvet's website"
         >@Bouvet</a
-      >
-    </p>
-    <p class="uk-text-lead">
-      Previously Software Developer
+      >. Previously Software Developer
       <a
         href="https://ludensgruppen.no/"
         target="_blank"
