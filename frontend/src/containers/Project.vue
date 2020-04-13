@@ -3,33 +3,40 @@
     <div v-if="loading" uk-spinner="ratio: 3"></div>
     <article v-else>
       <h2 class="uk-article-title">Project: {{ project.name }}</h2>
-      <p class="uk-text-lead">{{ project.title }}</p>
-      <div class="uk-child-width-auto uk-article-meta">
-        <div>
-          <a
-            class="uk-button uk-button-text"
-            :href="project.website"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="iconify" data-icon="cil:browser" data-inline="false"></span>
-            Go to website
-          </a>
-        </div>
-        <div v-if="project.isOpenSource">
-          <a
-            class="uk-button uk-button-text"
-            :href="project.gitLink"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span class="iconify" data-icon="bx:bx-code-alt" data-inline="false"></span>
-            View source code
-          </a>
-        </div>
-      </div>
       <img :src="project.image" :alt="project.name" />
-      <div v-html="project.descriptions" id="rich-text"></div>
+      <div class="article-body">
+        <span>Published at: {{ project.published }}</span>
+        <h3 class="uk-text-lead">{{ project.title }}</h3>
+        <div class="uk-child-width-auto uk-article-meta">
+          <div>
+            <a
+              class="uk-button uk-button-text"
+              :href="project.website"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View the live website"
+              aria-label="View the live website"
+            >
+              <span class="iconify" data-icon="cil:browser" data-inline="false"></span>
+              Go to website
+            </a>
+          </div>
+          <div v-if="project.isOpenSource">
+            <a
+              class="uk-button uk-button-text"
+              :href="project.gitLink"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="View source code"
+              aria-label="View source code"
+            >
+              <span class="iconify" data-icon="bx:bx-code-alt" data-inline="false"></span>
+              View source code
+            </a>
+          </div>
+        </div>
+        <div v-html="project.descriptions" id="rich-text"></div>
+      </div>
     </article>
   </div>
 </template>
@@ -66,24 +73,35 @@ export default {
   text-transform: capitalize;
 }
 
-.uk-text-lead {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.article-body {
+  max-width: 650px;
+  margin: 2rem auto;
+}
+
+.article-body .uk-text-lead {
+  margin: 2rem auto;
+  font-weight: 2rem;
+  font-weight: 900;
 }
 
 .uk-article-meta {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .uk-button-text {
   font-size: 1.2rem;
   text-transform: initial;
   margin-bottom: 1rem;
+  color: #333;
+}
+
+.uk-article-meta a {
+  color: #333;
 }
 
 #rich-text {
-  max-width: 650px;
   margin: 3rem auto;
   font-size: 1.2rem;
 }

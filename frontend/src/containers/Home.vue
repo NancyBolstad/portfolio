@@ -3,11 +3,13 @@
     <Banner />
     <h2 class="uk-article-title">/projects</h2>
     <Sort :categories="categories" :sortHandler="sort" />
-    <span class="uk-text-small">Sort by:</span>
-    <select class="uk-select" @change="sort($event.target.value)">
-      <option v-for="(category, index) in categories" :key="index">{{ category }}</option>
-    </select>
-    <ProjectsList v-if="sorted.length > 0" :projects="sorted" />
+    <label class="uk-text-small"
+      >Sort by categories:
+      <select class="uk-select" @change="sort($event.target.value)">
+        <option v-for="(category, index) in categories" :key="index">{{ category }}</option>
+      </select>
+    </label>
+    <ProjectsList v-if="sorted.length" :projects="sorted" />
     <ProjectsList v-else :projects="projects" />
   </div>
 </template>
@@ -61,9 +63,6 @@ export default {
       } else {
         this.showFull();
       }
-    },
-    changeSelect() {
-      console.log(222288789789789779);
     },
   },
   computed: {

@@ -5,6 +5,8 @@
         v-for="project in fullList"
         :to="{ path: '/project/' + project.id }"
         :key="project.id"
+        title="View details about the project"
+        aria-label="View details about the project"
       >
         <div
           class="uk-card uk-card-default"

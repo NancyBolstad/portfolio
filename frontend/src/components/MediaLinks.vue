@@ -1,7 +1,13 @@
 <template>
   <div class="uk-grid-small uk-child-width-auto" uk-grid>
     <div>
-      <a href="mailto:litchacha@gmail.com" target="_blank" rel="noopener noreferrer">
+      <a
+        href="mailto:litchacha@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Send email"
+        aria-label="Send email"
+      >
         <span
           class="iconify"
           data-inline="false"
@@ -11,7 +17,13 @@
       ></a>
     </div>
     <div>
-      <a href="https://github.com/NancyBolstad" target="_blank">
+      <a
+        href="https://github.com/NancyBolstad"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Go to Github"
+        aria-label="Go to Github"
+      >
         <span
           class="iconify"
           data-inline="false"
@@ -21,7 +33,13 @@
       ></a>
     </div>
     <div>
-      <a href="https://www.linkedin.com/in/nancy-bolstad/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/nancy-bolstad/"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Go to LinkedIn"
+        aria-label="Go to LinkedIn"
+      >
         <span
           class="iconify"
           data-inline="false"
