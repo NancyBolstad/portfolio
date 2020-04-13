@@ -10,7 +10,6 @@
         rel="noopener noreferrer"
         title="Go to Bouvet's website"
         aria-label="Go to Bouvet's website"
-        uk-tooltip="Go to Bouvet's website"
         >@Bouvet</a
       >. Previously Software Developer
       <a
@@ -19,7 +18,6 @@
         rel="noopener noreferrer"
         title="Go to Luden's website"
         aria-label="Go to Luden's website"
-        uk-tooltip="Go to Luden's website"
         >@Ludens</a
       >
     </p>

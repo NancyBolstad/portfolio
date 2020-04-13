@@ -29,7 +29,6 @@ export default {
     handler(category, index) {
       this.currentTab = index;
       this.sortHandler(category);
-      console.log(this.currentTab);
     },
   },
   computed: {},

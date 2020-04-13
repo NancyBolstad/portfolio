@@ -5,7 +5,7 @@
       <h2 class="uk-article-title">Project: {{ project.name }}</h2>
       <img :src="project.image" :alt="project.name" />
       <div class="article-body">
-        <span>Published at:{{ project.published }}</span>
+        <span>Published at: {{ project.published }}</span>
         <h3 class="uk-text-lead">{{ project.title }}</h3>
         <div class="uk-child-width-auto uk-article-meta">
           <div>
@@ -78,10 +78,10 @@ export default {
   margin: 2rem auto;
 }
 
-.uk-text-lead {
-  font-size: 2rem;
+.article-body .uk-text-lead {
   margin: 2rem auto;
-  font-weight: bold;
+  font-weight: 2rem;
+  font-weight: 900;
 }
 
 .uk-article-meta {

@@ -64,9 +64,6 @@ export default {
         this.showFull();
       }
     },
-    changeSelect() {
-      console.log(222288789789789779);
-    },
   },
   computed: {
     amount() {

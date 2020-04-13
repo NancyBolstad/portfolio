@@ -7,7 +7,6 @@
       uk-scroll
       title="Scroll back to top"
       aria-label="Scroll back to top"
-      uk-tooltip="Scroll back to top"
     ></a>
   </div>
 </template>

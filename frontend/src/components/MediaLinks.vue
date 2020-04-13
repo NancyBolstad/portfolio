@@ -7,7 +7,6 @@
         rel="noopener noreferrer"
         title="Send email"
         aria-label="Send email"
-        uk-tooltip="Send email"
       >
         <span
           class="iconify"
@@ -24,7 +23,6 @@
         rel="noopener noreferrer"
         title="Go to Github"
         aria-label="Go to Github"
-        uk-tooltip="Go to Github"
       >
         <span
           class="iconify"
@@ -41,7 +39,6 @@
         rel="noopener noreferrer"
         title="Go to LinkedIn"
         aria-label="Go to LinkedIn"
-        uk-tooltip="Go to LinkedIn"
       >
         <span
           class="iconify"
