@@ -31,13 +31,6 @@
       "categories": ["work projects"],
       "website": "https://askerkulturhus.no/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586331201/mysite/bo2ytz6xsco4awdxkibu.jpg",
-      "galley": [
-        "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586430095/mysite/mtgdj2b494j1oyonbzqz.jpg",
-        "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586430095/mysite/mtgdj2b494j1oyonbzqz.jpg",
-        "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586430095/mysite/mtgdj2b494j1oyonbzqz.jpg",
-        "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586430095/mysite/mtgdj2b494j1oyonbzqz.jpg",
-        "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586430095/mysite/mtgdj2b494j1oyonbzqz.jpg"
-      ],
       "isOpenSource": false
     },
     {
@@ -50,7 +43,8 @@
       "categories": ["pet projects", "machine learning"],
       "website": "https://look-at-me.netlify.com/",
       "image": "https://res.cloudinary.com/dnkfgmzy1/image/upload/q_auto/v1586330977/mysite/svpmnxwcwgtdbz2wga1f.jpg",
-      "isOpenSource": true
+      "isOpenSource": true,
+      "gitLink": "https://github.com/NancyBolstad/tensorflow-detection"
     },
     {
       "id": "0ed92f5bf1e1459fb367b205a25a69a1",
@@ -119,7 +113,7 @@
       "name": "Alt Installasjon AS",
       "published": "2020-02",
       "title": "Online store for electrical installations and equipment",
-      "descriptions": "<p>Implemented well-designed web-based user interfaces using React/Redux, TypeScript, Styled-Components, Node and advanced CSS animations. Gained hands-on experience with automated testing as well as continuous integration/deployment using CircleCI.</p>",
+      "descriptions": "<p>Implemented well-designed user interfaces using React/Redux, TypeScript, Styled-Components, Node and advanced CSS animations. Gained hands-on experience with automated testing as well as continuous integration/deployment using CircleCI.</p>",
       "technologies": ["react", "typescript"],
       "categories": ["e-commerce", "work projects"],
       "website": "https://www.altinstallasjon.no/",
