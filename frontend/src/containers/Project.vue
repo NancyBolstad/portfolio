@@ -11,6 +11,8 @@
             :href="project.website"
             target="_blank"
             rel="noopener noreferrer"
+            title="View the live website"
+            aria-label="View the live website"
           >
             <span class="iconify" data-icon="cil:browser" data-inline="false"></span>
             Go to website
@@ -22,6 +24,8 @@
             :href="project.gitLink"
             target="_blank"
             rel="noopener noreferrer"
+            title="View source code"
+            aria-label="View source code"
           >
             <span class="iconify" data-icon="bx:bx-code-alt" data-inline="false"></span>
             View source code
@@ -80,6 +84,11 @@ export default {
   font-size: 1.2rem;
   text-transform: initial;
   margin-bottom: 1rem;
+  color: #333;
+}
+
+.uk-article-meta a {
+  color: #333;
 }
 
 #rich-text {
