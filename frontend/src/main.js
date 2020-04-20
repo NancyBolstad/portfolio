@@ -17,9 +17,6 @@ const router = new VueRouter({
       path: '/project/:id',
       components: require('./containers/Project.vue'),
     },
-    {
-      path: '/category/:id',
-    },
   ],
 });
 
