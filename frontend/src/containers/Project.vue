@@ -104,10 +104,6 @@ export default {
 #rich-text {
   margin: 3rem auto;
   font-size: 1.2rem;
-}
-
-#rich-text > p,
-#rich-text > ul {
   line-height: 2;
 }
 
