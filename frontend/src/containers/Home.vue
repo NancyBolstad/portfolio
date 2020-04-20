@@ -2,15 +2,18 @@
   <div class="uk-section">
     <Banner />
     <h2 class="uk-article-title">/projects</h2>
-    <Sort :categories="categories" :sortHandler="sort" />
-    <label class="uk-text-small"
-      >Sort by categories:
-      <select class="uk-select" @change="sort($event.target.value)">
-        <option v-for="(category, index) in categories" :key="index">{{ category }}</option>
-      </select>
-    </label>
-    <ProjectsList v-if="sorted.length" :projects="sorted" />
-    <ProjectsList v-else :projects="projects" />
+    <div v-if="loading" uk-spinner="ratio: 3"></div>
+    <div v-else>
+      <Sort :categories="categories" :sortHandler="sort" />
+      <label class="uk-text-small">
+        Sort by categories:
+        <select class="uk-select" @change="sort($event.target.value)">
+          <option v-for="(category, index) in categories" :key="index">{{ category }}</option>
+        </select>
+      </label>
+      <ProjectsList v-if="sorted.length" :projects="sorted" />
+      <ProjectsList v-else :projects="projects" />
+    </div>
   </div>
 </template>
 
@@ -28,6 +31,7 @@ export default {
   data: function() {
     return {
       api_url: process.env.VUE_APP_API_URL,
+      loading: true,
       projects: [],
       sorted: [],
     };
@@ -48,6 +52,7 @@ export default {
         })
         .then(data => {
           this.projects = data.projects;
+          this.loading = false;
         });
     },
     showFull() {
