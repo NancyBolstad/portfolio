@@ -51,7 +51,9 @@ export default {
           return response.json();
         })
         .then(data => {
-          this.projects = data.projects;
+          this.projects = data.projects.filter(element => {
+            return element.id != 'c2598cb52970426581df9f3d5fce612a';
+          });
           this.loading = false;
         });
     },
