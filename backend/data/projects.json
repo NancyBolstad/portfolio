@@ -1,6 +1,27 @@
 {
   "projects": [
     {
+      "id": "hcd917cf128b48408369541784e28b31",
+      "name": "Hotel booking platform",
+      "published": "2020-06",
+      "title": "Full stack web development project",
+      "descriptions": "<p> A Node.js Restful API for CRUD operations using Express, TypeScript, Google Cloud Functions with Firebase. Automated development workflow using GitHub Actions. React components based design system using Styled-Components and Storybook. Search, filtering, sorting and paginating using Custom React Hooks. Dynamic routes and authentication using react-router-dom. Performance optimization, code splitting and lazy loading. Redux-like persisted Global Store using React Hooks and the State Reducer Pattern. Schema-based form-level validation using Yup.</p>",
+      "technologies": [
+        "react",
+        "typescript",
+        "node",
+        "firebase",
+        "styled-components",
+        "CircleCI",
+        "heroku"
+      ],
+      "categories": ["work projects"],
+      "website": "https://holidaze-bergen.netlify.app/",
+      "image": "https://res.cloudinary.com/dykdxdtuu/image/upload/v1597259024/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f64796b6478647475752f696d6167652f75706c6f61642f715f6175746f3a65636f2f76313539313838323338322f686f6c6964617a612f686f6c6964617a652d62657267656e2e6e65746c6966792e6170705f5f4c6170746f705f_1_f69myi.png",
+      "isOpenSource": true,
+      "gitLink": "https://github.com/NancyBolstad/bergen-hotel-booking"
+    },
+    {
       "id": "ecd917cf128b48408369541784e28b31",
       "name": "ludens",
       "published": "2020-04",
