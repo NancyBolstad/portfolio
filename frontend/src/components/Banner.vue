@@ -1,17 +1,20 @@
 <template>
   <article>
-    <h1>Hi, I am a Front-end Developer from Oslo.</h1>
+    <h1>Hi, I am a Full Stack Developer from Oslo.</h1>
     <strong class="uk-text-lead">JavaScript | TypeScript | Java | Go</strong>
     <p class="uk-text-lead">
-      Consultant
+      Software Developer
       <a
-        href="https://www.bouvet.no/"
+        href="https://www.universitetsforlaget.no/"
         target="_blank"
         rel="noopener noreferrer"
-        title="Go to Bouvet's website"
-        aria-label="Go to Bouvet's website"
-        >@Bouvet</a
-      >. Previously Software Developer
+        title="Go to Universitetsforlaget's website"
+        aria-label="Go to Universitetsforlaget's website"
+        >@Universitetsforlaget</a
+      >
+    </p>
+    <p class="uk-text-lead">
+      Previously Front-end Developer
       <a
         href="https://ludensgruppen.no/"
         target="_blank"
